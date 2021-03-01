@@ -1,5 +1,5 @@
 
-// fetch("https://api.github.com/users/hassanharoon321")
+fetch("https://api.github.com/users/hassanharoon321")
     .then(function (response) {
         return response.json()
     }).then(function (data) {

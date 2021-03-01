@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #d3d3d3;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 8px 10px #aaa9a9;
+}
+
+h1 {
+  text-align: center;
+  color: #f39c12;
+  margin-bottom: 20px;
+}
+
+.user-income {
+  margin-bottom: 10px;
+}
+
+.user-income input {
+  padding: 5px 0 5px 0;
+  width: 73%;
+}
+
+.user-income button {
+  padding: 7px 5px 7px 5px;
+}
+
+.btn-add-income {
+  background-color: #f39c12;
+  border-radius: 2px;
+  color: #fff;
+  border: 0;
+}
+/* 
+.btn-add-income:focus {
+  outline: 0;
+  border-color: #fff;
+} */
+
+.your-balance {
+  background-color: #f39c12;
+  height: 80px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.add-expense h2 {
+  color: #f39c12;
+  margin-bottom: 10px;
+}
+.div-expense-input {
+  margin-bottom: 10px;
+}
+
+.div-expense-input input {
+  width: 100%;
+  padding: 5px 0 5px 0;
+}
+
+.date {
+  width: 50%;
+  font-size: 16px;
+}
+
+.categories {
+  width: 45%;
+  padding: 5px;
+  background-color: #f39c12;
+  color: #fff;
+}
+
+.categories:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.btn-add-expense {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.btn-add-expense button {
+  background-color: #f39c12;
+  border-radius: 2px;
+  padding: 10px;
+  color: #fff;
+  border: 0;
+}
+
+.filter span {
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.filter {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.table-data {
+  background-color: #d3d3d3;
+  border-radius: 5px;
+  height: 200px;
+}
+
+.table-data table tr th {
+  padding: 7px;
+  color: #f39c12;
+}
