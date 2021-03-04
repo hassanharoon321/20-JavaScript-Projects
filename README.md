@@ -6,7 +6,7 @@
 
 2) Expense Tracker App
 
-![app](https://user-images.githubusercontent.com/48328091/109752385-25bf3980-7c02-11eb-9d4e-9ae330150340.JPG)
+![Capture](https://user-images.githubusercontent.com/48328091/109988236-2999ab80-7d29-11eb-9f24-be8c7349379e.JPG)
 
 3) Todo App
 
