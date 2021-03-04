@@ -1,11 +1,11 @@
 let balance = document.getElementById("income");
 let balanceValue; //balance
+var currentBalance = document.getElementById("currentBalance");
 
 const addIncome = () => {
   if (balance.value === "") {
     alert("Please Input Some Value")
   } else {
-    var currentBalance = document.getElementById("currentBalance");
     balanceValue = parseInt(balance.value)  //balance
     currentBalance.innerHTML = parseInt(balanceValue);
   }
@@ -16,7 +16,6 @@ const addExpense = () => {
   let date = document.getElementById("amountDate");
   let option = document.getElementById("amountOption");
   let allElement = document.getElementById("allElement");
-  let currentBalance = document.getElementById("currentBalance");  //update on dashboard
 
   if (expense.value === "") {
     alert("please Enter Amount First")
@@ -74,11 +73,11 @@ const addExpense = () => {
     tr.appendChild(tdDelete);
 
     allElement.appendChild(tr)
+
   }
 }
 
 function deleteItem(e) {
-  var currentBalance = document.getElementById("currentBalance");
   e.parentNode.parentNode.remove();
   var newExpense = e.parentNode.parentNode.firstChild.innerText;
   var expense = parseInt(newExpense)
@@ -87,16 +86,17 @@ function deleteItem(e) {
 }
 
 function EditItem(e) {
-  var currentBalance = document.getElementById("currentBalance");
-  var newExpense = prompt("Enter New Value");
-  var expense = parseInt(newExpense);
-  e.parentNode.parentNode.firstChild.innerText = expense;
-  console.log(currentBalance);
-  currentBalance.innerHTML = balanceValue += expense 
+  var promptValue = prompt("Enter new Value");
+
+  var balance = parseInt(currentBalance.innerText);
+  var userValue = parseInt(promptValue);
+
+  e.parentNode.parentNode.firstChild.innerText = userValue;
+
+  currentBalance.innerHTML = balance += userValue
+  console.log(balance);
+
 }
-
-
-
 
 
 

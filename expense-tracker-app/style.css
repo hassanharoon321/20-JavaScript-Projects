@@ -21,7 +21,7 @@ body {
 
 h1 {
   text-align: center;
-  color: #f39c12;
+  color: purple;
   margin-bottom: 20px;
 }
 
@@ -39,7 +39,7 @@ h1 {
 }
 
 .btn-add-income {
-  background-color: #f39c12;
+  background-color: purple;
   border-radius: 2px;
   color: #fff;
   border: 0;
@@ -51,7 +51,7 @@ h1 {
 } */
 
 .your-balance {
-  background-color: #f39c12;
+  background-color: purple;
   height: 80px;
   color: #fff;
   padding: 10px;
@@ -60,7 +60,7 @@ h1 {
 }
 
 .add-expense h2 {
-  color: #f39c12;
+  color: purple;
   margin-bottom: 10px;
 }
 .div-expense-input {
@@ -80,7 +80,7 @@ h1 {
 .categories {
   width: 45%;
   padding: 5px;
-  background-color: #f39c12;
+  background-color: purple;
   color: #fff;
 }
 
@@ -95,7 +95,7 @@ h1 {
 }
 
 .btn-add-expense button {
-  background-color: #f39c12;
+  background-color: purple;
   border-radius: 2px;
   padding: 10px;
   color: #fff;
@@ -103,7 +103,7 @@ h1 {
 }
 
 .filter span {
-  color: #f39c12;
+  color: purple;
   font-weight: bold;
 }
 
@@ -121,7 +121,7 @@ h1 {
 
 .table-data table tr th {
   padding: 7px;
-  color: #f39c12;
+  color: purple;
 }
 
 td {
@@ -130,7 +130,7 @@ td {
 }
 
 button {
-  background-color: #f39c12;
+  background-color: purple;
   border-radius: 2px;
   color: #fff;
   border: 0;
