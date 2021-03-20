@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <title>Add Expense Button</title>
+  </head>
+  <body>
+    <div class="container-fluid-two">
+      <div class="logout-username">
+        <p>Welcome User!</p>
+        <button class="btn btn-primary" onclick="logout()">Logout</button>
+      </div>
+      <button onclick="backToDashBoard()">Back To Dashboard</button>
+      <h1 class="dashboard-welcome">Welcome To Expense Managment System</h1>
+    </div>
+
+    <div class="all-expenses">
+      <h1>Add Expense</h1>
+    </div>
+
+    <div class="all-expense-forms container">
+      <div class="form-group">
+        <label class="control-label" for="name">Description:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="Enter Description"
+        />
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="name">Amount</label>
+        <input
+          type="number"
+          class="form-control"
+          id="name"
+          placeholder="Enter Amount"
+        />
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="category">Category:</label>
+        <select
+          class="form-control"
+          id="category"
+          data-field="category"
+          required=""
+        >
+          <option value="">Select Category</option>
+        </select>
+      </div>
+      <button class="btn btn-primary">Add Expense</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

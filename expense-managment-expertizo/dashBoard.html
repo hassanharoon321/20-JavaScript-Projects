@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="container-fluid-two">
+      <div class="logout-username">
+        <p>Welcome User!</p>
+        <button class="btn btn-primary" onclick="logout()">Logout</button>
+      </div>
+      <h1 class="dashboard-welcome">Welcome To Expense Managment System</h1>
+    </div>
+
+    <div class="all-expenses">
+      <h1>All Expenses</h1>
+      <button class="btn btn-primary" onclick="redirectToAddExpense()">Add Expense</button>
+      <button class="btn btn-primary">All Categories</button>
+      <button class="btn btn-primary">Generate Report</button>
+    </div>
+    <div class="search-input-divv">
+      <input
+        type="text"
+        class="search-input"
+        id="email"
+        placeholder="Search By Category...."
+      />
+    </div>
+
+
+    <table class="table table-one container">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Description</th>
+          <th scope="col">Amount</th>
+          <th scope="col">Category</th>
+          <th scope="col">Created On</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">01</th>
+          <td>Expertizo Fees</td>
+          <td>2000</td>
+          <td>Fees</td>
+          <td>Date</td>
+          <td>edit</td>
+        </tr>
+        <tr>
+          <th scope="row">02</th>
+          <td>House Rent</td>
+          <td>4000</td>
+          <td>Rent</td>
+          <td>Date</td>
+          <td>Delete</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="app.js"></script>
+  </body>
+</html>

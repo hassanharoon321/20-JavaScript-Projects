@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1>Welcome To Expense Managment System</h1>
+    </div>
+
+    <!-- Form start -->
+
+    <div class="sign-up-form container">
+      <form onsubmit="signUp(event)">
+        <div class="form-group">
+          <label class="control-label" for="name">User Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter Name"
+          />
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="email">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter Email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="text"
+            class="form-control"
+            id="password"
+            placeholder="Password"
+          />
+        </div>
+        <div class="form-group">
+          <button
+            type="submit"
+            class="btn btn-primary sign-up-btn"
+            onclick="SignUp()"
+          >
+            Sing Up
+          </button>
+        </div>
+        <div class="form-group">
+          <span>_______or_______</span><br /><br />
+          <button class="btn btn-info sign-in-btn" onclick="signIn()">
+            Sign In</button
+          ><br /><br />
+        </div>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
