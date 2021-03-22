@@ -11,7 +11,7 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
-    <title>Dashboard</title>
+    <title>All Categories</title>
   </head>
   <body>
     <div class="container-fluid-two">
@@ -19,53 +19,39 @@
         <p id="welcomeUser">Welcome User!</p>
         <button class="btn btn-primary" onclick="logout()">Logout</button>
       </div>
+      <button onclick="backToDashBoard()">Back To Dashboard</button>
       <h1 class="dashboard-welcome">Welcome To Expense Managment System</h1>
     </div>
 
     <div class="all-expenses">
-      <h1>All Expenses</h1>
-      <button class="btn btn-primary" onclick="redirectToAddExpense()">Add Expense</button>
-      <button class="btn btn-primary" onclick="redirectToAllCategories()">All Categories</button>
-      <button class="btn btn-primary">Generate Report</button>
-    </div>
-    <div class="search-input-divv">
-      <input
-        type="text"
-        class="search-input"
-        id="email"
-        placeholder="Search By Category...."
-      />
+      <h1>All Categories</h1>
     </div>
 
+    <div class="container text-center mt-3">
+      <button class="btn btn-primary" onclick="addCategories()">
+        Add Categories
+      </button>
+    </div>
 
     <table class="table table-one container">
       <thead class="thead-dark">
         <tr>
           <th scope="col">Id</th>
-          <th scope="col">Description</th>
-          <th scope="col">Amount</th>
-          <th scope="col">Category</th>
-          <th scope="col">Created On</th>
-          <th scope="col">Actions</th>
+          <th scope="col">Category Name</th>
+          <th scope="col">Craeted On</th>
         </tr>
       </thead>
-      <tbody>
-        <tr>
+      <tbody id="tBodyTable">
+        <!-- <tr>
           <th scope="row">01</th>
           <td>Expertizo Fees</td>
           <td>2000</td>
-          <td>Fees</td>
-          <td>Date</td>
-          <td>edit</td>
         </tr>
         <tr>
           <th scope="row">02</th>
           <td>House Rent</td>
           <td>4000</td>
-          <td>Rent</td>
-          <td>Date</td>
-          <td>Delete</td>
-        </tr>
+        </tr> -->
       </tbody>
     </table>
 

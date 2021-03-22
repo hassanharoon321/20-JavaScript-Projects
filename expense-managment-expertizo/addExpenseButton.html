@@ -16,7 +16,7 @@
   <body>
     <div class="container-fluid-two">
       <div class="logout-username">
-        <p>Welcome User!</p>
+        <p id="welcomeUser">Welcome User!</p>
         <button class="btn btn-primary" onclick="logout()">Logout</button>
       </div>
       <button onclick="backToDashBoard()">Back To Dashboard</button>
@@ -33,7 +33,7 @@
         <input
           type="text"
           class="form-control"
-          id="name"
+          id="description"
           placeholder="Enter Description"
         />
       </div>
@@ -42,7 +42,7 @@
         <input
           type="number"
           class="form-control"
-          id="name"
+          id="amount"
           placeholder="Enter Amount"
         />
       </div>
@@ -50,14 +50,13 @@
         <label class="control-label" for="category">Category:</label>
         <select
           class="form-control"
-          id="category"
+          id="category-in-expense"
           data-field="category"
-          required=""
         >
-          <option value="">Select Category</option>
+          <!-- <option value="selectCategory">Select Category</option> -->
         </select>
       </div>
-      <button class="btn btn-primary">Add Expense</button>
+      <button class="btn btn-primary add-expense-bttn" onclick="addExpenseApp()">Add Expense</button>
     </div>
 
     <script src="app.js"></script>

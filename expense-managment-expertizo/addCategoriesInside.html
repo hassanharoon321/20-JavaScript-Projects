@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <title>Add Categories</title>
+  </head>
+  <body>
+    <div class="container-fluid-two">
+      <div class="logout-username">
+        <p id="welcomeUser">Welcome User!</p>
+        <button class="btn btn-primary" onclick="logout()">Logout</button>
+      </div>
+      <button onclick="backToCategoriesAll()">Back To Categories</button>
+      <h1 class="dashboard-welcome">Welcome To Expense Managment System</h1>
+    </div>
+
+    <div class="all-expenses">
+      <h1>Add Category</h1>
+    </div>
+
+    <div class="form-group container text-center mt-3">
+      <label for="text">Category Name</label>
+      <input
+        type="text"
+        class="form-control mt-3"
+        id="categoryItem"
+        placeholder="Category Name"
+      />
+    </div>
+
+    <button class="btn btn-primary custom-prop mt-3" onclick="addCategoriesItem()">Add</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>

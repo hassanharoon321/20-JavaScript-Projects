@@ -61,7 +61,6 @@
   right: 100px;
   bottom: 200px;
   align-items: baseline;
-  /* border: 1px solid black; */
 }
 
 .logout-username p {
@@ -93,4 +92,19 @@
 
 .table-one{
   margin-top: 20px;
+}
+
+
+/* Add Expense Button start */
+
+.add-expense-bttn{
+  margin-left: 500px;
+  margin-top: 20px;
+}
+
+
+/* inside all category btn start */
+
+.custom-prop{
+  margin-left: 650px;
 }
