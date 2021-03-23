@@ -86,31 +86,6 @@ const backToDashBoard = () => {
     window.location.assign("./dashBoard.html")
 }
 
-let cate2 = localStorage.getItem('cate');
-cate2 = JSON.parse(cate2);
-
-let selectCate = document.getElementById("category-in-expense");
-cate2.map((item) => {
-    let optionTag = document.createElement("option");
-    let optionTagText = document.createTextNode(item.category);
-    optionTag.setAttribute("value", "" + item.category + "")
-    optionTag.appendChild(optionTagText);
-
-    selectCate.appendChild(optionTag);
-})
-
-
-function addExpenseApp() {
-    let description = document.getElementById("description");
-    let amount = document.getElementById("amount");
-    let slectCate = document.getElementById("category-in-expense")
-
-    console.log(description)
-    console.log(amount)
-    console.log(slectCate.childNodes)
-}
-
-
 
 //All Categories Button Page start
 function redirectToAllCategories() {
@@ -122,46 +97,31 @@ function addCategories() {
 }
 
 let cate = localStorage.getItem('cate');
-cate = JSON.parse(cate);
+    cate = JSON.parse(cate);
+    
+    const newMap = cate.map((item) => {
 
-const newMap = cate.map((item) => {
+        const tBody = document.getElementById("tBodyTable");
 
-    const tBody = document.getElementById("tBodyTable");
+        const tr = document.createElement("tr");
 
-    const tr = document.createElement("tr");
+        const thId = document.createElement("th");
+        const thIdText = document.createTextNode(item.id);
+        thId.appendChild(thIdText)
+        tr.appendChild(thId)
 
-    const thId = document.createElement("th");
-    const thIdText = document.createTextNode(item.id);
-    thId.appendChild(thIdText)
-    tr.appendChild(thId)
+        const thCategory = document.createElement("th");
+        const thCategoryText = document.createTextNode(item.category);
+        thCategory.appendChild(thCategoryText);
+        tr.appendChild(thCategory)
 
-    const thCategory = document.createElement("th");
-    const thCategoryText = document.createTextNode(item.category);
-    thCategory.appendChild(thCategoryText);
-    tr.appendChild(thCategory)
+        const thDate = document.createElement("th");
+        const thDateText = document.createTextNode(item.createdOn);
+        thDate.appendChild(thDateText);
+        tr.appendChild(thDate);
 
-    const thDate = document.createElement("th");
-    const thDateText = document.createTextNode(item.createdOn);
-    thDate.appendChild(thDateText);
-    tr.appendChild(thDate);
-
-    tBody.appendChild(tr);
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        tBody.appendChild(tr);
+    })
 
 
 
