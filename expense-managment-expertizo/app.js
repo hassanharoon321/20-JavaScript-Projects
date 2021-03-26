@@ -150,25 +150,3 @@ function addCategoriesItem() {
     alert("category added")
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

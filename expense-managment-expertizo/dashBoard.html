@@ -24,22 +24,27 @@
 
     <div class="all-expenses">
       <h1>All Expenses</h1>
-      <button class="btn btn-primary" onclick="redirectToAddExpense()">Add Expense</button>
-      <button class="btn btn-primary" onclick="redirectToAllCategories()">All Categories</button>
-      <button class="btn btn-primary">Generate Report</button>
+      <button class="btn btn-primary" onclick="redirectToAddExpense()">
+        Add Expense
+      </button>
+      <button class="btn btn-primary" onclick="redirectToAllCategories()">
+        All Categories
+      </button>
+      <button class="btn btn-primary" onclick="generateReport()">
+        Generate Report
+      </button>
     </div>
     <div class="search-input-divv">
       <input
         type="text"
         class="search-input"
         id="searchType"
-        onchange="search()"
+        onchange="searchIn()"
         placeholder="Search By Category...."
       />
     </div>
 
-
-    <table class="table table-one container">
+    <table class="table table-one container" id="total-table">
       <thead class="thead-dark">
         <tr>
           <th scope="col">Id</th>
@@ -72,6 +77,6 @@
 
     <script src="app.js"></script>
     <script src="dashboardExpense.js"></script>
-    <script src="Search.js"></script>
+    <script src="GenerateReport.js"></script>
   </body>
 </html>
